@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI", "SurveyAPI\SurveyAPI.csproj", "{68FE4633-2377-4442-B5B8-3F894572C239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI.Entities", "Models\SurveyAPI.Entities.csproj", "{EA73845C-4260-4AAF-A13A-EC2CD74FFFAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPITest", "SurveyAPITest\SurveyAPITest.csproj", "{3F31328C-7724-415F-A68C-D8894A237657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI.Business", "Survey.Business\SurveyAPI.Business.csproj", "{AE441D38-A44E-4C59-9D22-81FDD36716E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI.Business.Interfaces", "Survey.Business.Interfaces\SurveyAPI.Business.Interfaces.csproj", "{A3257D51-593C-41A5-8B41-8714A0128749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI.Repository", "Survey.Repository\SurveyAPI.Repository.csproj", "{4425BFC0-CCBF-4EFD-A0DB-CCFA3C56FA26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyAPI.Repository.Interfaces", "Survey.Repository.Interfaces\SurveyAPI.Repository.Interfaces.csproj", "{BBF98391-00FC-43C8-887A-1B175E5B3CF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68FE4633-2377-4442-B5B8-3F894572C239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FE4633-2377-4442-B5B8-3F894572C239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FE4633-2377-4442-B5B8-3F894572C239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FE4633-2377-4442-B5B8-3F894572C239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA73845C-4260-4AAF-A13A-EC2CD74FFFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA73845C-4260-4AAF-A13A-EC2CD74FFFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA73845C-4260-4AAF-A13A-EC2CD74FFFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA73845C-4260-4AAF-A13A-EC2CD74FFFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F31328C-7724-415F-A68C-D8894A237657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F31328C-7724-415F-A68C-D8894A237657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F31328C-7724-415F-A68C-D8894A237657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F31328C-7724-415F-A68C-D8894A237657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE441D38-A44E-4C59-9D22-81FDD36716E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE441D38-A44E-4C59-9D22-81FDD36716E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE441D38-A44E-4C59-9D22-81FDD36716E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE441D38-A44E-4C59-9D22-81FDD36716E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3257D51-593C-41A5-8B41-8714A0128749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3257D51-593C-41A5-8B41-8714A0128749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3257D51-593C-41A5-8B41-8714A0128749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3257D51-593C-41A5-8B41-8714A0128749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4425BFC0-CCBF-4EFD-A0DB-CCFA3C56FA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4425BFC0-CCBF-4EFD-A0DB-CCFA3C56FA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4425BFC0-CCBF-4EFD-A0DB-CCFA3C56FA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4425BFC0-CCBF-4EFD-A0DB-CCFA3C56FA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF98391-00FC-43C8-887A-1B175E5B3CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF98391-00FC-43C8-887A-1B175E5B3CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF98391-00FC-43C8-887A-1B175E5B3CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF98391-00FC-43C8-887A-1B175E5B3CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\bin\Debug\SurveyAPI.Repository.Interfaces.dll
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\bin\Debug\SurveyAPI.Repository.Interfaces.pdb
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\bin\Debug\SurveyAPI.Entities.dll
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\bin\Debug\SurveyAPI.Entities.pdb
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\obj\Debug\SurveyAPI.Repository.Interfaces.csprojResolveAssemblyReference.cache
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\obj\Debug\SurveyAPI.Repository.Interfaces.dll
+c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository.Interfaces\obj\Debug\SurveyAPI.Repository.Interfaces.pdb
