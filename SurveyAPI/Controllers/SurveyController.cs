@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace SurveyAPI.Controllers
 {
+    [RoutePrefix("api/v1")]
     public class SurveyController : ApiController
     {
         private ISurveyBM surveyBM;
