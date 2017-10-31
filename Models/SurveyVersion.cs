@@ -8,11 +8,12 @@ namespace SurveyAPI.Entities
 {
     public class SurveyVersion
     {
-        public int Id { get; set; }
-        public bool IsTimeBound { get; set; }
-        public int MaxUsers { get; set; }
-        public int MinUsrs { get; set; }
-        public string Status { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public virtual int Id { get; set; }
+        public virtual bool IsTimeBound { get; set; }
+        public virtual int MaxUsers { get; set; }
+        public virtual int MinUsers { get; set; }
+        public virtual string Status { get; set; }
+        public virtual DateTime CreatedDate { get; set; }
+        public virtual Survey Survey { get; set; }
     }
 }
