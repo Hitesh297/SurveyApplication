@@ -21,7 +21,7 @@ namespace SurveyAPI.Controllers
         [HttpGet]
         public IHttpActionResult Get()
         {
-            return Ok(surveyBM.Get(););
+            return Ok(surveyBM.Get());
         }
     }
 }
