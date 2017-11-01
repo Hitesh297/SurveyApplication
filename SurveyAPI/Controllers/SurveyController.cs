@@ -24,5 +24,13 @@ namespace SurveyAPI.Controllers
             var test = surveyBM.Get();
             return Ok(test);
         }
+
+        [Route("Survey/Create")]
+        [HttpGet]
+        public IHttpActionResult Create()
+        {
+            var test = surveyBM.Get();
+            return Ok(test);
+        }
     }
 }
