@@ -11,6 +11,6 @@ namespace SurveyAPI.Business.Interfaces
     public interface ISurveyBM
     {
         List<Survey> Get();
-        Survey Create(Survey survey);
+        Survey CreateOrUpdate(Survey survey);
     }
 }

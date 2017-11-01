@@ -22,9 +22,9 @@ namespace SurveyAPI.Business
             return surveyRepository.Get();
         }
 
-        public Survey Create(Survey survey)
+        public Survey CreateOrUpdate(Survey survey)
         {
-            return surveyRepository.Create(survey);
+            return surveyRepository.CreateOrUpdate(survey);
         }
     }
 }

@@ -22,15 +22,15 @@ namespace SurveyAPI.Controllers
         [HttpGet]
         public IHttpActionResult Get()
         {
-            var test = surveyBM.Get();
-            return Ok(test);
+            IList<Survey> surveys = surveyBM.Get();
+            return Ok(surveys);
         }
 
-        [Route("Survey/Create")]
+        [Route("Survey/CreateOrUpdate")]
         [HttpPost]
-        public IHttpActionResult Create([FromBody]Survey survey)
+        public IHttpActionResult CreateOrUpdate([FromBody]Survey survey)
         {
-            var test = surveyBM.Create(survey);
+            var test = surveyBM.CreateOrUpdate(survey);
             return Ok(test);
         }
     }

@@ -18,7 +18,7 @@ namespace SurveyAPI.Repository
                 return session.CreateCriteria<Survey>().List<Survey>().ToList();
         }
 
-        public Survey Create(Survey survey)
+        public Survey CreateOrUpdate(Survey survey)
         {
             using (ISession session = NHibernateHelper.OpenSession())
             {

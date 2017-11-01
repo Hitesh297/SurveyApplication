@@ -32,17 +32,20 @@ namespace SurveyAPITest
             newSurveyVersion.IsTimeBound = false;
             newSurveyVersion.MaxUsers = 1000;
             newSurveyVersion.MinUsers = 200;
-            newSurveyVersion.Status = "Open";
+            newSurveyVersion.Status = "ACTIVE";
             newSurveyVersion.Questions = new List<Question>();
 
             newSurvey.SurveyVersions.Add(newSurveyVersion);
 
-            Question newQuestion = new SingleSelect();
+            SingleSelect newQuestion = new SingleSelect();
             newQuestion.Description = "Single select inserted";
+            newQuestion.Rating = 7;
 
             newSurvey.SurveyVersions[0].Questions.Add(newQuestion);
             var json = new JavaScriptSerializer().Serialize(newSurvey);
-            var test = surveyCtrl.Create(newSurvey);
+            var test = surveyCtrl.CreateOrUpdate(newSurvey);
+
+            Assert.IsNotNull(test);
         }
     }
 }
