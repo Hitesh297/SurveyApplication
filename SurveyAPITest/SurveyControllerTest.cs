@@ -18,7 +18,7 @@ namespace SurveyAPITest
         }
 
         [TestMethod]
-        public void CreateTest()
+        public void CreateOrUpdateTest()
         {
             SurveyController surveyCtrl = new SurveyController();
             Survey newSurvey = new Survey();
