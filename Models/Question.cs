@@ -12,4 +12,20 @@ namespace SurveyAPI.Entities
         public virtual string Description { get; set; }
         public virtual SurveyVersion SurveyVersion { get; set; }
     }
+
+    public class SingleSelect : Question
+    {
+        public virtual int Rating { get; set; }
+    }
+
+    public class MultiSelect : Question
+    {
+        public virtual int MaxSelection { get; set; }
+    }
+
+    public class QuestionType
+    {
+        public int Id { get; set; }
+        public  virtual string Description { get; set; }
+    }
 }

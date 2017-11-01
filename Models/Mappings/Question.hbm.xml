@@ -10,6 +10,21 @@
     <property name="Description" column="DESCRIPTION"/>
     <many-to-one name="SurveyVersion" class="SurveyAPI.Entities.SurveyVersion" column="SURVEYVERSIONID" />
 
+    <joined-subclass
+		table="SINGLESELECT"
+		name="SurveyAPI.Entities.SingleSelect">
+		<key column="QUESTIONID"/>
+		<property name="Rating" column="RATING"/>
+	</joined-subclass>
+    
+    <joined-subclass
+		table="MULTISELECT"
+		name="SurveyAPI.Entities.MultiSelect">
+		<key column="QUESTIONID"/>
+		<property name="MaxSelection" column="MAXSELECTION"/>
+	</joined-subclass>
+
+
 
   </class>
 
