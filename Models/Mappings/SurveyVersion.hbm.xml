@@ -13,6 +13,12 @@
     <property name="Status" column="STATUS"/>
     <property name="CreatedDate" column="CREATEDDATE"/>
     <many-to-one name="Survey" class="SurveyAPI.Entities.Survey" column="SURVEYID" />
+    
+    <bag name="Questions" lazy="false" inverse="true"
+                         batch-size="25" cascade="all-delete-orphan">
+      <key column="SURVEYVERSIONID" />
+      <one-to-many class="SurveyAPI.Entities.Question" />
+    </bag>
 
 
   </class>

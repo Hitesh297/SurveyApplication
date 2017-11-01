@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="SurveyAPI.Entities"
+                   namespace="SurveyAPI.Entities">
+
+  <class name="SurveyAPI.Entities.Question" table="QUESTION">
+    <id name="Id" column="QUESTIONID" type="Int32">
+      <generator class="identity" />
+    </id>
+    <property name="Description" column="DESCRIPTION"/>
+    <many-to-one name="SurveyVersion" class="SurveyAPI.Entities.SurveyVersion" column="SURVEYVERSIONID" />
+
+
+  </class>
+
+</hibernate-mapping>
