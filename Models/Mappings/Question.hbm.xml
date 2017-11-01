@@ -3,7 +3,7 @@
                    assembly="SurveyAPI.Entities"
                    namespace="SurveyAPI.Entities">
 
-  <class name="SurveyAPI.Entities.Question" table="QUESTION">
+  <class name="SurveyAPI.Entities.Question" table="QUESTION" lazy="true">
     <id name="Id" column="QUESTIONID" type="Int32">
       <generator class="identity" />
     </id>

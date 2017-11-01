@@ -7,7 +7,6 @@ c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.R
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\obj\Debug\SurveyAPI.Repository.csprojResolveAssemblyReference.cache
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\obj\Debug\SurveyAPI.Repository.dll
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\obj\Debug\SurveyAPI.Repository.pdb
-c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\bin\Debug\SurveyAPI.Repository.dll.config
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\bin\Debug\Antlr3.Runtime.dll
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\bin\Debug\Iesi.Collections.dll
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\Survey.Repository\bin\Debug\NHibernate.dll

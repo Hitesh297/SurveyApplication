@@ -1,6 +1,7 @@
 ﻿
 using SurveyAPI.Business;
 using SurveyAPI.Business.Interfaces;
+using SurveyAPI.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -26,8 +27,8 @@ namespace SurveyAPI.Controllers
         }
 
         [Route("Survey/Create")]
-        [HttpGet]
-        public IHttpActionResult Create()
+        [HttpPost]
+        public IHttpActionResult Create(Survey survey)
         {
             var test = surveyBM.Get();
             return Ok(test);
