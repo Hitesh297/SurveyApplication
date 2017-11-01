@@ -10,7 +10,7 @@ namespace SurveyAPI.Entities
     {
         public virtual int Id { get; set; }
         public virtual string Description { get; set; }
-        public virtual SurveyVersion SurveyVersion { get; set; }
+        //public virtual SurveyVersion SurveyVersion { get; set; }
     }
 
     public class SingleSelect : Question
@@ -25,7 +25,7 @@ namespace SurveyAPI.Entities
 
     public class QuestionType
     {
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         public  virtual string Description { get; set; }
     }
 }

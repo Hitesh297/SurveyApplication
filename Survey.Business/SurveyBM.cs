@@ -21,5 +21,10 @@ namespace SurveyAPI.Business
         {
             return surveyRepository.Get();
         }
+
+        public Survey Create(Survey survey)
+        {
+            return surveyRepository.Create(survey);
+        }
     }
 }

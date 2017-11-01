@@ -10,5 +10,6 @@ namespace SurveyBM.Repository.Interfaces
     public interface ISurveyRepository
     {
         List<Survey> Get();
+        Survey Create(Survey survey);
     }
 }

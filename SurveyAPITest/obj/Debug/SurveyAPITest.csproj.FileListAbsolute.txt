@@ -47,3 +47,5 @@ c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAP
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAPITest\bin\Debug\Remotion.Linq.xml
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAPITest\bin\Debug\Remotion.Linq.EagerFetching.xml
 c:\users\hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAPITest\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAPITest\bin\Debug\log4net.dll
+C:\Users\Hitesh\documents\visual studio 2015\Projects\SurveyApplication\SurveyAPITest\bin\Debug\log4net.xml

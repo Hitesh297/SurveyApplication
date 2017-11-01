@@ -14,7 +14,7 @@ namespace SurveyAPI.Entities
         public virtual int MinUsers { get; set; }
         public virtual string Status { get; set; }
         public virtual DateTime CreatedDate { get; set; }
-        public virtual Survey Survey { get; set; }
+        //public virtual Survey Survey { get; set; }
         public virtual IList<Question> Questions { get; set; }
     }
 }

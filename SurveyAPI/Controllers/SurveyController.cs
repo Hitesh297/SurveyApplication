@@ -28,9 +28,9 @@ namespace SurveyAPI.Controllers
 
         [Route("Survey/Create")]
         [HttpPost]
-        public IHttpActionResult Create(Survey survey)
+        public IHttpActionResult Create([FromBody]Survey survey)
         {
-            var test = surveyBM.Get();
+            var test = surveyBM.Create(survey);
             return Ok(test);
         }
     }

@@ -4,21 +4,22 @@
                    namespace="SurveyAPI.Entities">
 
   <class name="SurveyAPI.Entities.Question" table="QUESTION" lazy="true">
-    <id name="Id" column="QUESTIONID" type="Int32">
-      <generator class="identity" />
+    <id name="Id" column="QUESTIONID" >
+      <generator class="increment" />
     </id>
     <property name="Description" column="DESCRIPTION"/>
-    <many-to-one name="SurveyVersion" class="SurveyAPI.Entities.SurveyVersion" column="SURVEYVERSIONID" />
+    <!--<many-to-one name="SurveyVersion" class="SurveyAPI.Entities.SurveyVersion"
+                 column="SURVEYVERSIONID" />-->
 
     <joined-subclass
-		table="SINGLESELECT"
+		table="SINGLESELECT" 
 		name="SurveyAPI.Entities.SingleSelect">
 		<key column="QUESTIONID"/>
 		<property name="Rating" column="RATING"/>
 	</joined-subclass>
     
     <joined-subclass
-		table="MULTISELECT"
+		table="MULTISELECT" 
 		name="SurveyAPI.Entities.MultiSelect">
 		<key column="QUESTIONID"/>
 		<property name="MaxSelection" column="MAXSELECTION"/>

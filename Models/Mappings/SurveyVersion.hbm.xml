@@ -5,16 +5,16 @@
 
   <class name="SurveyAPI.Entities.SurveyVersion" table="SURVEYVERSION" lazy="true">
     <id name="Id" column="SURVEYVERSIONID" type="Int32">
-      <generator class="identity" />
+      <generator class="increment" />
     </id>
     <property name="IsTimeBound" column="ISTIMEBOUND" type="YesNo" />
     <property name="MaxUsers" column="MAXUSERS"/>
     <property name="MinUsers" column="MINUSERS"/>
     <property name="Status" column="STATUS"/>
     <property name="CreatedDate" column="CREATEDDATE"/>
-    <many-to-one name="Survey" class="SurveyAPI.Entities.Survey" column="SURVEYID" />
+    <!--<many-to-one name="Survey" class="SurveyAPI.Entities.Survey" column="SURVEYID" />-->
     
-    <bag name="Questions" lazy="false" inverse="true"
+    <bag name="Questions" lazy="false" 
                          batch-size="25" cascade="all-delete-orphan">
       <key column="SURVEYVERSIONID" />
       <one-to-many class="SurveyAPI.Entities.Question" />

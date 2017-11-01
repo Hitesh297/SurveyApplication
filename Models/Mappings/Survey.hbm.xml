@@ -4,14 +4,14 @@
                    namespace="SurveyAPI.Entities">
 
   <class name="SurveyAPI.Entities.Survey" table="SURVEY" lazy="true">
-    <id name="Id" column="SURVEYID" type="Int32">
-      <generator class="identity" />
+    <id name="Id" column="SURVEYID" >
+      <generator class="increment"/>
     </id>
     <property name="Description" column="DESCRIPTION" />
     <property name="CreatedBy" column="CREATEDBY"/>
     <property name="CreatedDate" column="CREATEDDATE"/>
 
-    <bag name="SurveyVersions" lazy="false" inverse="true"
+    <bag name="SurveyVersions" lazy="false" 
                          batch-size="25" cascade="all-delete-orphan">
       <key column="SURVEYID" />
       <one-to-many class="SurveyAPI.Entities.SurveyVersion" />
