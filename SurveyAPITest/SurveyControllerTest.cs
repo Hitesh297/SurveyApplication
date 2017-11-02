@@ -41,11 +41,18 @@ namespace SurveyAPITest
             newQuestion.Description = "Single select inserted";
             newQuestion.Rating = 7;
 
+            MultiSelect Question = new MultiSelect();
+            Question.Description = "Multi select inserted";
+            Question.MaxSelection = 2;
+
             newSurvey.SurveyVersions[0].Questions.Add(newQuestion);
+            newSurvey.SurveyVersions[0].Questions.Add(Question);
             var json = new JavaScriptSerializer().Serialize(newSurvey);
             var test = surveyCtrl.CreateOrUpdate(newSurvey);
 
             Assert.IsNotNull(test);
         }
     }
+
+    
 }
