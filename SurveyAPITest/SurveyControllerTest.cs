@@ -27,15 +27,43 @@ namespace SurveyAPITest
             newSurvey.Description = "New Survey inserted at " + newSurvey.CreatedDate;
             newSurvey.SurveyVersions = new List<SurveyVersion>();
             
-            SurveyVersion newSurveyVersion = new SurveyVersion();
-            newSurveyVersion.CreatedDate = DateTime.Now;
-            newSurveyVersion.IsTimeBound = false;
-            newSurveyVersion.MaxUsers = 1000;
-            newSurveyVersion.MinUsers = 200;
-            newSurveyVersion.Status = "ACTIVE";
-            newSurveyVersion.Questions = new List<Question>();
+            SurveyVersion newSurveyVersion1 = new SurveyVersion();
+            newSurveyVersion1.CreatedDate = DateTime.Now;
+            newSurveyVersion1.IsTimeBound = false;
+            newSurveyVersion1.MaxUsers = 1000;
+            newSurveyVersion1.MinUsers = 200;
+            newSurveyVersion1.Status = "ACTIVE";
+            newSurveyVersion1.Questions = new List<Question>();
 
-            newSurvey.SurveyVersions.Add(newSurveyVersion);
+            SurveyVersion newSurveyVersion2 = new SurveyVersion();
+            newSurveyVersion2.CreatedDate = DateTime.Now;
+            newSurveyVersion2.IsTimeBound = false;
+            newSurveyVersion2.MaxUsers = 1000;
+            newSurveyVersion2.MinUsers = 200;
+            newSurveyVersion2.Status = "CLOSED";
+            newSurveyVersion2.Questions = new List<Question>();
+
+            SurveyVersion newSurveyVersion3 = new SurveyVersion();
+            newSurveyVersion3.CreatedDate = DateTime.Now;
+            newSurveyVersion3.IsTimeBound = false;
+            newSurveyVersion3.MaxUsers = 1000;
+            newSurveyVersion3.MinUsers = 200;
+            newSurveyVersion3.Status = "CLOSED";
+            newSurveyVersion3.Questions = new List<Question>();
+
+            SurveyVersion newSurveyVersion4 = new SurveyVersion();
+            newSurveyVersion4.CreatedDate = DateTime.Now;
+            newSurveyVersion4.IsTimeBound = false;
+            newSurveyVersion4.MaxUsers = 1000;
+            newSurveyVersion4.MinUsers = 200;
+            newSurveyVersion4.Status = "CLOSED";
+            newSurveyVersion4.Questions = new List<Question>();
+
+
+            newSurvey.SurveyVersions.Add(newSurveyVersion1);
+            newSurvey.SurveyVersions.Add(newSurveyVersion2);
+            newSurvey.SurveyVersions.Add(newSurveyVersion3);
+            newSurvey.SurveyVersions.Add(newSurveyVersion4);
 
             SingleSelect newQuestion = new SingleSelect();
             newQuestion.Description = "Single select inserted";
