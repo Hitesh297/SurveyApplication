@@ -26,5 +26,10 @@ namespace SurveyAPI.Business
         {
             return surveyRepository.CreateOrUpdate(survey);
         }
+
+        public IList<Survey> Search(SearchSurveys searchSurveys)
+        {
+            return surveyRepository.Search(searchSurveys);
+        }
     }
 }

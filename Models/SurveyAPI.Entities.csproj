@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Question.cs" />
+    <Compile Include="SearchSurveys.cs" />
     <Compile Include="Survey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SurveyVersion.cs" />

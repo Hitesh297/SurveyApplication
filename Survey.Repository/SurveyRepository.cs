@@ -1,5 +1,6 @@
 ﻿
 using NHibernate;
+using NHibernate.Criterion;
 using SurveyAPI.Entities;
 using SurveyBM.Repository.Interfaces;
 using System;
@@ -28,6 +29,17 @@ namespace SurveyAPI.Repository
                 transaction.Commit();
                 session.Flush();
                 return survey;
+            }
+        }
+
+        public IList<Survey> Search(SearchSurveys searchSurveys)
+        {
+            using (ISession session = NHibernateHelper.OpenSession())
+            {
+                var surveys = session.QueryOver<Survey>()
+                    .WhereRestrictionOn(x => x.CreatedBy).IsInsensitiveLike(searchSurveys.CreatedBy).List();
+           return surveys;
+
             }
         }
     }

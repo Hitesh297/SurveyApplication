@@ -33,5 +33,13 @@ namespace SurveyAPI.Controllers
             var test = surveyBM.CreateOrUpdate(survey);
             return Ok(test);
         }
+
+        [Route("Survey/Search")]
+        [HttpGet]
+        public IHttpActionResult Search([FromBody]SearchSurveys searchSurveys)
+        {
+            var test = surveyBM.Search(searchSurveys);
+            return Ok(test);
+        }
     }
 }

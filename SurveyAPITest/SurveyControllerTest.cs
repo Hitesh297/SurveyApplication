@@ -80,6 +80,14 @@ namespace SurveyAPITest
 
             Assert.IsNotNull(test);
         }
+
+        [TestMethod]
+        public void SearchSurveysTest()
+        {
+            SurveyController surveyCtrl = new SurveyController();
+            SearchSurveys searchSurveys = new SearchSurveys() { CreatedBy = "hitesh" };
+            var test = surveyCtrl.Search(searchSurveys);
+        }
     }
 
     

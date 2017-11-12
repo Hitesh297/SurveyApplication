@@ -11,5 +11,6 @@ namespace SurveyBM.Repository.Interfaces
     {
         List<Survey> Get();
         Survey CreateOrUpdate(Survey survey);
+        IList<Survey> Search(SearchSurveys searchSurveys);
     }
 }
